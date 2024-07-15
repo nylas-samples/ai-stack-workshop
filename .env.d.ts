@@ -1,9 +1,9 @@
 declare global {
   namespace NodeJS {
     interface ProcessEnv {
-      GRANT_ID: string;
-      API_KEY: string;
-      SERVER_URL: string;
+      NYLAS_GRANT_ID: string;
+      NYLAS_API_KEY: string;
+      NYLAS_API_URL: string;
     }
   }
 }
