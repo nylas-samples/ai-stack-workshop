@@ -1,0 +1,19 @@
+{
+  "name": "ai-stack-workshop",
+  "version": "1.0.0",
+  "description": "Workshop: The AI Stack - Build with AI + Email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nylas-samples/ai-stack-workshop.git"
+  },
+  "author": "https://github.com/relaxedtomato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nylas-samples/ai-stack-workshop/issues"
+  },
+  "homepage": "https://github.com/nylas-samples/ai-stack-workshop#readme"
+}

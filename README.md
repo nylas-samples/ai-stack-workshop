@@ -1,5 +1,13 @@
-# code-sample-description
-This sample repo will show you how to easily do X with Nylas.
+# The AI Stack
+#### Workshop: Build with AI + Email
+This repository is standalone, and can be completed by following the steps below. This workshop was also presented at WeAreDevelopers, here are the slides for the workshop as reference.
+
+The repository will show you how to get started with building using the AI Stack and Email. To get up to speed, we will keep this workshop light with respect to dependencies and third party services. 
+
+We will need some data to work with, so will use our emails retrieved using the Nylas Email API. To learn more about Nylas, check out our developer docs.
+
+- [ ] Insert developer doc link
+- [ ] Insert workshop slide link
 
 ## Setup
 
