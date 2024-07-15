@@ -22,6 +22,7 @@
   "homepage": "https://github.com/nylas-samples/ai-stack-workshop#readme",
   "dependencies": {
     "dotenv": "^16.4.5",
-    "nylas": "^7.5.2"
+    "nylas": "^7.5.2",
+    "string-strip-html": "^13.4.8"
   }
 }
