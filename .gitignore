@@ -11,3 +11,4 @@ CTAGS
 .idea
 .env
 build/src/
+package-lock.json
