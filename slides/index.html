@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="@@base@@" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+    <link rel="stylesheet" href="engine/main.css" />
+    <link rel="stylesheet" href="theme/tokyo.css" />
+    <link rel="stylesheet" href="engine/katex/katex.min.css" />
+    <!--<link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />-->
+    <style>
+    :root{
+--logo: ;
+--darkaccent1color: ;
+--lightaccent1color: ;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #ffffff;
+--darktitletextcolor: #000000;
+--lightbodytextcolor: #ffffff;
+--darkbodytextcolor: #000000;
+--lightbackgroundcolor: #fffeff;
+--darkbackgroundcolor: #3f3f3f;
+--bodyfont: system-ui;
+--titlefont: system-ui;
+--lightframecolor: #FFFFFF;
+--darkframecolor: #000000;
+} 
+
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="engine/print.css"
+      media="print"
+    />
+  </head>
+
+  <body class="responsive">
+    <div class="reveal">
+      <div class="slides"><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><h1 id="theaistack">The AI Stack</h1>
+
+<h3 id="workshop:buildwithaiemail">Workshop: Build with AI + Email</h3>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_7.png" class=" size-contain position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><p><strong>Generative AI is everywhere</strong>. Software is rapidly evolving with <strong>AI-powered features</strong> pioneering novel user experiences. As <strong>LLM models and storage become a commodity</strong>, developers must focus on <strong>integrating relevant user context</strong> to deliver <strong>long-term value to end-users</strong>.</p>
+
+<blockquote>
+<p>TL;DR: Generative AI + Useful Data</p>
+</blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Designer%20(1).jpeg" class=" position-center-center"></figure>
+        <div style=""><ol>
+<li>🤔 Where are we going?</li>
+<li>⌨️ Get Started</li>
+<li>🍄 Fun Side Aventures</li>
+<li>⌨️ Summarize Text</li>
+<li>⌨️ Search Text (end of first half)</li>
+<li>⌨️ CYOA: LLM + Email</li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><hgroup><p class="kicker">Where are we going?</p>
+
+<h2 id="demo:textsemanticsearch">Demo: Text Semantic Search</h2></hgroup></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="workshopchecklist">Workshop Checklist</h3>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Setup to Build with Nylas APIs</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Retrieve Messages using Nylas Email API</li>
+</ul>
+
+<p>🍄 Side Adventures (🎧)</p>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Summarize Text</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Search Text</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><hgroup><p class="kicker">Let's get our environment ready</p>
+
+<h2 id="dassetup">Das Setup</h2></hgroup></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><p>⌨️ nylas.com/devevents</p>
+
+<p><em>So you can signup for free</em></p>
+<div class="single-image-wrapper"><figure><img src="images/Screenshot%202024-07-16%20at%2012.21.20%E2%80%AFPM.png" class=" position-center-top"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><hgroup><p class="kicker">⌨️ create a (sandbox) Nylas App (click <code class="hljs gauss"><span class="hljs-keyword">Create</span> <span class="hljs-keyword">new</span> app</code>)</p>
+
+<h3 id="soyoucangrabtheapicredentials"><em>So you can grab the API credentials</em></h3></hgroup></div>
+        <figure style=""><img src="images/Clipboard_23.png" class=" size-contain position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><p>⌨️ create a test grant: <code class="hljs ebnf"><span class="hljs-attribute">NYLAS_GRANT_ID</span></code></p>
+
+<h3 id="soyoucanretrieveyouremailsoverapi"><em>So you can retrieve your Emails over API</em></h3>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_25.png" class=" size-contain position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><p>⌨️ create an API key: <code class="hljs ebnf"><span class="hljs-attribute">NYLAS_API_KEY</span></code></p>
+
+<h3 id="soyoucanmakecallsusingthesdk"><em>So you can make calls using the SDK</em></h3>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_26.png" class=" size-contain position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><hgroup><p class="kicker">⌨️ <code class="hljs coffeescript">$ <span class="hljs-built_in">npm</span> i nylas</code></p>
+
+<h3 id="soyoucanbuildwithoursdk"><em>So you can build with our SDK</em></h3></hgroup></div>
+        <figure style=""><img src="images/Screenshot%202024-07-16%20at%201.16.03%E2%80%AFPM.png" class=" position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <hgroup><p class="kicker">⌨️ start a replit and clone</p>
+
+<p><code class="hljs awk">github.com<span class="hljs-regexp">/nylas-samples/</span>ai-stack</code></p>
+
+<h3 id="soyoudonothavetostartfromscratch"><em>So you do not have to start from scratch</em></h3></hgroup>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><p>⌨️ create <code class="hljs asciidoc"><span class="hljs-title">.env</span></code> with credentials</p>
+
+<h2 id="soyoucanmakenylasapicalls"><em>So you can make Nylas API calls</em></h2>
+
+<pre><code class="hljs ini"><span class="hljs-comment"># create `.env` file in project directory</span>
+
+<span class="hljs-attr">NYLAS_API_KEY</span>=NYLAS_API_KEY
+<span class="hljs-attr">NYLAS_GRANT_ID</span>=NYLAS_GRANT_ID
+<span class="hljs-attr">NYLAS_API_URI</span>=https://api.eu.nylas.com
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <hgroup><p class="kicker">⌨️ open a browser tab: developer.nylas.com</p>
+
+<h3 id="soyoucanreadmorelater"><em>So you can read more (later)</em></h3></hgroup>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <hgroup><p class="kicker">⌨️ run <code class="hljs coffeescript"><span class="hljs-built_in">npm</span> i</code> in project folder</p>
+
+<h3 id="sowecangetcodingnext"><em>So we can get coding next!</em></h3></hgroup>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.672rem;">
+        <div style=""><p>⌨️ create <code class="hljs x86asm">getGrantDetails<span class="hljs-number">.</span><span class="hljs-keyword">js</span></code></p>
+
+<pre><code class="javascript hljs"><span class="hljs-comment">// Start: Nylas SDK Config</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">'dotenv/config'</span>
+<span class="hljs-keyword">import</span> Nylas <span class="hljs-keyword">from</span> <span class="hljs-string">'nylas'</span>
+
+<span class="hljs-keyword">const</span> NylasConfig = {
+  <span class="hljs-attr">apiKey</span>: process.env.NYLAS_API_KEY,
+  <span class="hljs-attr">apiUri</span>: process.env.NYLAS_API_URI,
+};
+
+<span class="hljs-keyword">const</span> nylas = <span class="hljs-keyword">new</span> Nylas(NylasConfig)
+<span class="hljs-comment">// End: Nylas SDK Config</span>
+
+<span class="hljs-keyword">const</span> grantDetails = <span class="hljs-keyword">await</span> nylas.grants.list()
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">JSON</span>.stringify(grantDetails))
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.625rem;">
+        <div style=""><p>⌨️ <code class="hljs crmsh">$ <span class="hljs-keyword">node</span> <span class="hljs-title">getGrantDetails</span>.js</code></p>
+
+<h2 id="soyoucanchecksetupisworking"><em>So You Can Check Setup is Working</em></h2>
+
+<pre><code class="bash hljs">$ node getGrantDetails.js
+{
+  <span class="hljs-string">"requestId"</span>:<span class="hljs-string">"REQUEST_ID"</span>,
+  <span class="hljs-string">"data"</span>:[{
+    <span class="hljs-string">"id"</span>:<span class="hljs-string">"NYLAS_GRANT_ID"</span>,
+    <span class="hljs-string">"grantStatus"</span>:<span class="hljs-string">"valid"</span>,
+    <span class="hljs-string">"provider"</span>:<span class="hljs-string">"google"</span>,
+    <span class="hljs-string">"scope"</span> [...SCOPES...],
+    <span class="hljs-string">"email"</span>:<span class="hljs-string">"EMAIL"</span>
+    ...MORE DETAILS...
+]}
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="nylasisprogrammableemail🤔">Nylas is Programmable Email 🤔</h1>
+
+<h3 id="socaniwriteaprogramtostopreceivingemails"><em>So can I write a program to stop receiving emails?</em></h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Clipboard_27.png" class=" position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="apitoconnecttoanyemailprovider">API to Connect to Any Email Provider</h2>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_28.png" class=" position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="letstakeanexamplefromthewild">Let's take an example from the wild</h1></div>
+        <figure style=""><img src="images/Clipboard_29.png" class=" size-contain position-center-center"></figure>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <hgroup><p class="kicker">Now setup is (almost) complete</p>
+
+<h3 id="soyoucantakeabreather😮‍💨"><em>So you can take a breather 😮‍💨</em></h3></hgroup>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="🍄sideadventure:⌨️vibebox.app">🍄 Side Adventure: ⌨️ vibebox.app</h3>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_2.png" class=" position-center-top"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="🍄sideadventure:⌨️vibebox.app">🍄 Side Adventure: ⌨️ vibebox.app</h3>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_3.png" class=" size-contain position-center-top"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <hgroup><p class="kicker">Let's fetch Emails with Nylas Email API</p>
+
+<h3 id="soyoucansummarizetextemails"><em>So you can summarize text (emails)</em></h3></hgroup>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><p>⌨️ create <code class="hljs vim">getEmails.<span class="hljs-keyword">ts</span></code></p>
+
+<pre><code class="javascript hljs"><span class="hljs-comment">// Insert Nylas config from `getGrantDetails.js`</span>
+
+<span class="hljs-keyword">const</span> messages = <span class="hljs-keyword">await</span> nylas.messages.list({
+  <span class="hljs-attr">identifier</span>: process.env.NYLAS_GRANT_ID,
+  <span class="hljs-attr">queryParams</span>: {
+    <span class="hljs-attr">limit</span>: <span class="hljs-number">1</span>,
+  }
+});
+
+<span class="hljs-built_in">console</span>.log(messages)
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.485rem;">
+        <div style=""><p>⌨️ run <code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">getEmails</span>.ts</code></p>
+
+<pre><code class="bash hljs">$ node getEmails.ts
+{
+  requestId: <span class="hljs-string">'REQUEST ID'</span>,
+  data: [
+    {
+      starred: <span class="hljs-literal">false</span>, unread: <span class="hljs-literal">true</span>,
+      folders: [Array],
+      subject: <span class="hljs-string">'SUBECT'</span>,
+      threadId: <span class="hljs-string">'THREAD ID'</span>,
+      body: <span class="hljs-string">'EMAIL BODY'</span>
+      grantId: <span class="hljs-string">'NYLAS_GRANT_ID'</span>,
+      id: <span class="hljs-string">'190b614f5d6a34a5'</span>, // 🍄 MESSAGE ID
+      object: <span class="hljs-string">'message'</span>,
+      snippet: <span class="hljs-string">'EMAIL SNIPPET'</span>,
+      bcc: [], cc: [], attachments: [],
+      from: [Array], replyTo: [], to: [Array],
+      date: 1721041744
+    }
+  ],
+  nextCursor: <span class="hljs-string">'09271998855719598431'</span>,
+  next: [Function: bound next]
+}
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <hgroup><p class="kicker">🍄 Side Adventure: ⌨️ Build an AI Email Responder with Nylas Smart Compose</p>
+
+<h3 id="soyoudonthavetowriteemailsanymore"><em>So you don't have to write emails anymore!</em></h3></hgroup>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 0.438rem;">
+        <div style=""><h2 id="⌨️https:developer.nylas.comdocsv3email">⌨️ https://developer.nylas.com/docs/v3/email/</h2>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_30.png" class=" position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.813rem;">
+        <div style=""><p>⌨️ create <code class="hljs x86asm">createEmailResponder<span class="hljs-number">.</span><span class="hljs-keyword">js</span></code></p>
+
+<pre><code class="javascript hljs"><span class="hljs-comment">// Insert Nylas config from `getGrantDetails.js`</span>
+
+<span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> nylas.messages.smartCompose.composeMessageReply({
+  <span class="hljs-attr">identifier</span>: process.env.NYLAS_GRANT_ID,
+  <span class="hljs-attr">messageId</span>: <span class="hljs-string">"INSERT A MESSAGE ID"</span>,
+  <span class="hljs-attr">requestBody</span>: {
+    <span class="hljs-attr">prompt</span>: <span class="hljs-string">'Respond to the email'</span>,
+  }
+})
+
+<span class="hljs-built_in">console</span>.log(response)
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><p>⌨️ run <code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">createEmailResponder</span>.js</code></p>
+
+<pre><code class="bash hljs">$ node createEmailResponder.js
+{
+  requestId: <span class="hljs-string">'REQUEST ID'</span>,
+  data: {
+    suggestion: <span class="hljs-string">'AI GENERATED EMAIL RESPONSE'</span>
+  }
+}
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="workshopchecklist">Workshop Checklist</h3>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Setup to Build with Nylas</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Retrieve Messages using Nylas Email API</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Summarize Text</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Search Text</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="timeout...">Timeout...</h2>
+
+<h2 id="whyemail✉️">Why Email? ✉️</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="4.5bemailusers">4.5B Email Users</h2>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_4.png" class=" size-contain position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><blockquote class="is-single-quote"><div class="line"></div>
+<p>"Generative AI will change ‘everything’ about email" - Rahul Vhora, CEO at Superhuman</p>
+<div class="line"></div></blockquote></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="ai💙email">AI 💙 Email</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="waystollm"><em>Ways</em> to LLM</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="llmintegrationapproaches">LLM Integration Approaches</h3>
+
+<ol>
+<li>Propriety LLMs (OpenAI)</li>
+<li>Open Source LLMs (HuggingFace)</li>
+<li>✅ Existing Service (Nylas Smart Compose)</li>
+<li>Local LLMS (Ollama)🤔</li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="datallmsdbs">Data &gt; LLMs, DBs</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="localllms">Local LLMs</h3></div>
+        <div style=""><ul>
+<li>Sandbox Environment</li>
+<li>Privacy &amp; Data Control</li>
+<li>Rapid developer iteration</li>
+<li>On-Device Models</li>
+<li>Browser Supported</li>
+<li>Avoid Premature Scaling</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 0.766rem;">
+        <div style=""><h3 id="huggingface.codocstransformers.js">huggingface.co/docs/transformers.js</h3>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_5.png" class=" position-center-top"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><hgroup><p class="kicker">⌨️ <code class="hljs coffeescript">$ <span class="hljs-built_in">npm</span> i @xenova/transformers</code></p>
+
+<h2 id="soyoucanbuildwithllmslocally"><em>So you can build with LLMs Locally</em></h2></hgroup></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="🍄sideadventure:⌨️whatdoestransformer.jsuseunderthehood">🍄 Side Adventure: ⌨️ What does Transformer.js use under the hood?</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="onnxruntime.ai">onnxruntime.ai</h3>
+<div class="single-image-wrapper"><figure><img src="images/Clipboard_6.png" class=" position-center-center"></figure></div></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.625rem;">
+        <div style=""><p>⌨️ create <code class="hljs x86asm">summarizeEmails<span class="hljs-number">.</span><span class="hljs-keyword">js</span></code></p>
+
+<pre><code class="javascript hljs"><span class="hljs-keyword">import</span> { pipeline } <span class="hljs-keyword">from</span> <span class="hljs-string">'@xenova/transformers'</span>;
+<span class="hljs-keyword">import</span> { stripHtml } <span class="hljs-keyword">from</span> <span class="hljs-string">"string-strip-html"</span>;
+
+<span class="hljs-comment">// Nylas config from `getEmails.js` </span>
+<span class="hljs-comment">// Nylas `messages.get` call from `getEmails.js`        </span>
+
+<span class="hljs-keyword">const</span> summarize = <span class="hljs-keyword">await</span> pipeline(<span class="hljs-string">'summarization'</span>);
+
+<span class="hljs-keyword">const</span> cleanMessages = messages.data.map(
+  <span class="hljs-function"><span class="hljs-params">message</span> =&gt;</span> stripHtml(message.body).result
+)
+
+<span class="hljs-keyword">const</span> summaries = <span class="hljs-keyword">await</span> <span class="hljs-built_in">Promise</span>.all(
+  cleanMessages.map(<span class="hljs-keyword">async</span> message =&gt; <span class="hljs-keyword">await</span> summarize(message))
+)
+      
+<span class="hljs-built_in">console</span>.log(summaries);
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><p>⌨️ run <code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">summarizeEmails</span>.ts</code></p>
+
+<pre><code class="bash hljs"><span class="hljs-variable">$node</span> summarizeEmails.ts
+No model specified. Using default model: <span class="hljs-string">"Xenova/distilbart-cnn-6-6"</span>.
+...ONNX RUNTIME WARNINGS...
+[
+  [
+    {
+      summary_text: <span class="hljs-string">'EMAIL SUMMARY'</span>
+    }
+  ]
+]
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="workshopchecklist">Workshop Checklist</h3>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Setup to Build with Nylas</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Retrieve Messages using Nylas Email API</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Summarize Text</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Search Text</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="retrieval-augmentedgenerationrag">Retrieval-Augmented Generation (RAG)</h2>
+
+<p><br></p>
+
+<p>Combine LLMs with user data, like email, to create more accurate, context-aware outputs.</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="simplesemanticsearch">(Simple) Semantic Search</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="workingwithvectorembeddings:dataaspointsinspace">Working with Vector Embeddings: Data as Points in Space</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.391rem;">
+        <div style=""><p>⌨️ create <code class="hljs x86asm">semanticSearch<span class="hljs-number">.</span><span class="hljs-keyword">js</span></code></p>
+
+<p>Part 1/3: Generate Embeddings</p>
+
+<pre><code class="javascript hljs"><span class="hljs-keyword">import</span> { pipeline, env } <span class="hljs-keyword">from</span> <span class="hljs-string">'@xenova/transformers'</span>;
+
+    <span class="hljs-comment">// Nylas config from `getEmails.js` </span>
+    <span class="hljs-comment">// Nylas `messages.get` call from `getEmails.js`        </span>
+
+<span class="hljs-keyword">const</span> embeddings = []
+
+<span class="hljs-keyword">const</span> createEmebedding = <span class="hljs-keyword">await</span> pipeline(<span class="hljs-string">'feature-extraction'</span>);
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> message <span class="hljs-keyword">of</span> messages.data) {
+    
+  <span class="hljs-keyword">const</span> text = <span class="hljs-string">`
+    Email Subject: <span class="hljs-subst">${message.subject}</span>; 
+    Email Body: <span class="hljs-subst">${stripHtml(message.body).result}</span>
+  `</span>;
+    
+  <span class="hljs-keyword">const</span> embedding = <span class="hljs-keyword">await</span> createEmebedding(
+    text, 
+    { <span class="hljs-attr">pooling</span>: <span class="hljs-string">'mean'</span>, <span class="hljs-attr">normalize</span>: <span class="hljs-literal">true</span> }
+  );
+  
+  embeddings.push({<span class="hljs-attr">id</span>: message.id, <span class="hljs-attr">data</span>: embedding.data });
+}
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">`Total Embeddings: <span class="hljs-subst">${embeddings.length}</span>`</span>)
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><p>⌨️ run <code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">semanticSearch</span>.js</code> to test code so far</p>
+
+<pre><code class="javascript hljs">$ node semanticSearch.js
+No model specified. Using <span class="hljs-keyword">default</span> model: <span class="hljs-string">"Xenova/all-MiniLM-L6-v2"</span>.
+<span class="hljs-attr">createEmbeddings</span>: <span class="hljs-number">1</span>:<span class="hljs-number">30.074</span> (m:ss.mmm)
+Total Embeddings: <span class="hljs-number">200</span>
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.438rem;">
+        <div style=""><p>⌨️ update <code class="hljs x86asm">semanticSearch<span class="hljs-number">.</span><span class="hljs-keyword">js</span></code></p>
+
+<p>Part 2/3: Search Embeddings</p>
+
+<pre><code class="bash hljs">import { calculateSimilarity } from <span class="hljs-string">'./utils/calculateSimilarity.js'</span>
+
+async <span class="hljs-keyword">function</span> semanticSearch(query) {
+  const queryEmbedding = await createEmebedding(
+    query, 
+    { pooling: <span class="hljs-string">'mean'</span>, normalize: <span class="hljs-literal">true</span> }
+  )
+
+  const results = []
+  
+  embeddings.map(embedding =&gt; {
+    const similarity = calculateSimilarity(
+      queryEmbedding.data,
+      embedding.data
+    )
+    
+    results.push({ id: embedding.id, similarity })
+  })
+  
+  results.sort((a, b) =&gt; b.similarity - a.similarity)
+  
+  <span class="hljs-built_in">return</span> results.filter(result =&gt; result.similarity &gt;= 0.30)
+}
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.344rem;">
+        <div style=""><p>⌨️ update <code class="hljs x86asm">semanticSearch<span class="hljs-number">.</span><span class="hljs-keyword">js</span></code></p>
+
+<p>Part 3/3: User Input Loop</p>
+
+<pre><code class="javascript hljs"><span class="hljs-keyword">import</span> readline <span class="hljs-keyword">from</span> <span class="hljs-string">'readline'</span>;
+
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">promptSearch</span>(<span class="hljs-params"></span>) </span>{
+  rl.question(<span class="hljs-string">"What's your query? "</span>, <span class="hljs-keyword">async</span> (query) =&gt; {
+    <span class="hljs-keyword">if</span> (query.toLowerCase() === <span class="hljs-string">'exit'</span>) {
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Goodbye!'</span>);
+      rl.close();
+      <span class="hljs-keyword">return</span>;
+    }
+
+    <span class="hljs-keyword">const</span> searchResults = <span class="hljs-keyword">await</span> semanticSearch(query);
+
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'searchResults.length'</span>, searchResults.length)
+
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> result <span class="hljs-keyword">of</span> searchResults.slice(<span class="hljs-number">0</span>, <span class="hljs-number">10000</span>)) {
+        <span class="hljs-keyword">const</span> message = messages.data.find(<span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> e.id === result.id);
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Message Subject:"</span>, message.subject);
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Similarity score:"</span>, result.similarity);
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"---"</span>);
+    }
+
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'\n'</span>); <span class="hljs-comment">// Add a blank line for readability</span>
+    promptSearch(); <span class="hljs-comment">// Repeat the prompt</span>
+  });
+}
+
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Welcome to Simple Semantic Search. Type "exit" to quit.'</span>);
+promptSearch();
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present fit-warning has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.625rem;">
+        <div style=""><p>⌨️ run <code class="hljs crmsh"><span class="hljs-keyword">node</span> <span class="hljs-title">semanticSearch</span>.js</code></p>
+
+<pre><code class="bash hljs">$ node semanticSearch.ts
+ node semanticSearch.js
+No model specified. Using default model: <span class="hljs-string">"Xenova/all-MiniLM-L6-v2"</span>.
+createEmbeddings: 3.763s
+10
+Welcome to Simple Semantic Search. Type <span class="hljs-string">"exit"</span> to quit.
+What<span class="hljs-string">'s your query? developer conference
+searchResults.length 2
+Message Subject: [Slack] GreetBot mentioned you in #GreetBot
+Similarity score: 0.383791833544529
+---
+Message Subject: Re: Tech Leaders Stage - Nylas
+Similarity score: 0.33154722330084185
+---
+What'</span>s your query? <span class="hljs-built_in">exit</span>
+Goodbye!
+</code></pre></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="workshopchecklist">Workshop Checklist</h3>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Setup to Build with Nylas</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Retrieve Messages using Nylas Email API</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Summarize Text</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Search Text</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h3 id="ragchecklist:">RAG Checklist:</h3>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Dataset size and usage</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Compliance Requirements</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Type of Data / Content</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Model Overall Performance</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">Budget (Time, Cost)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="" checked="">End-User Usage (i.e. Async, Sync)</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h3 id="tobecontinued...">To Be Continued...</h3>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Model Selection &amp; Evaluation</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">RAG Optimization Techniques</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Machine Learning Operations</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Model Fine Tuning</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="">Browser LLMs</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark title-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-title" style="width: 100%; font-size: 1rem;">
+        <div style=""><h2 id="raggenerativeaiusefuldata">RAG = Generative AI + Useful Data</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="🍄sideadventure:🎧headphonegiveaway">🍄 Side Adventure: 🎧 Headphone Giveaway!</h3>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="secondhalfofworkshop">Second Half of Workshop</h3>
+
+<h3 id="chooseyourownadventurecyoa:aistackemail">Choose Your Own Adventure (CYOA): AI Stack + Email</h3>
+
+<p><br></p>
+
+<h4 id="soyoucanbuildthenextunicorn🦄">So you can build the next Unicorn! 🦄</h4>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark section-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-section" style="width: 100%; font-size: 1rem;">
+        <div style="">
+          <h3 id="rambansal">Ram Bansal</h3>
+
+<p>nylas.com/devevents</p>
+
+<p>LinkedIn: ram-bansal</p>
+
+<p>X: @_RamB_</p>
+        </div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container responsive present has-dark-background fitted" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <figure style=""><img src="images/Clipboard_7.png" class=" size-contain position-center-center"></figure>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section></div>
+    </div>
+    <script src="engine/index.js"></script>
+    <!--<script src="engine/d3v4.min.js" charset="utf-8"></script>
+    <script src="engine/charts.min.js" charset="utf-8"></script>
+    <script src="engine/billboard.min.js"></script>-->
+    <script src="engine/pptxgen.min.js"></script>
+                                                   <script src="engine/pfill.js"></script>
+    <script src="engine/published.js"></script>
+
+    <script>
+      Reveal.configure({
+        progress: true,
+        keyboard: true,
+        dependencies: [
+          {
+            src: "engine/highlight.js",
+            sync: true,
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
