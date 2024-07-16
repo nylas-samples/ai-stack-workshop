@@ -22,10 +22,15 @@ We will need some data to work with, so will use our emails retrieved using the 
 You'll need the following values from the Nylas Dashboard:
 
 ```text
-ACCESS_TOKEN = ""
-CLIENT_ID = ""
-CLIENT_SECRET = ""
+NYLAS_API_KEY=NYLAS_API_KEY
+NYLAS_GRANT_ID=NYLAS_GRANT_ID
+NYLAS_API_URI=https://api.eu.nylas.com
 ```
+
+Ensure to use the correct NYLAS_API_URI for your app's region (EU: https://api.eu.nylas.com, US: https://api.us.nylas.com). You can check the data residency from the dashboard for EU: 🇪🇺 or US: 🇺🇸:
+
+<img width="600" alt="Screenshot 2024-07-16 at 8 18 29 AM" src="https://github.com/user-attachments/assets/adf5a018-cefa-4805-b17a-5ae85e35b4d2">
+
 
 Add the above values to a `.env` file.
 
@@ -40,15 +45,13 @@ $ npm i
 
 ## Usage
 
-The recommended way to use this sample is ...
-
-You can also clone the repository ...
-
-You'll find more detailed instructions ...
+Use this starter code and follow along with the slides to complete the workshop!
 
 ## Get support
 
-If you found a bug or want to suggest a new [feature/use case/sample], please file an issue.
+If you need help, reach out to us during the workshop or drop a message on our forums:
+
+- [ ] Insert Nylas Forums link
 
 ## Learn more
 
