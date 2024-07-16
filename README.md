@@ -14,8 +14,7 @@ We will need some data to work with, so will use our emails retrieved using the 
 ## Setup
 
 ### System dependencies
-
-- Add System dependencies
+node version 18 and above
 
 ### Gather environment variables
 
