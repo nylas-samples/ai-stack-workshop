@@ -2,7 +2,7 @@
 #### Workshop: Build with AI + Email
 [Sign up for Nylas for Free!](https://nylas.cc/devevents)
 
-This repository is standalone, and can be completed by following the steps below. This workshop was also presented at [WeAreDevelopers](https://www.wearedevelopers.com/world-congress), check out the [workshop slides](https://ai-stack-workshop.onrender.com).
+This repository is standalone, and can be completed by following the steps below. This workshop was also presented at [WeAreDevelopers](https://www.wearedevelopers.com/world-congress).
 
 The repository will show you how to get started with building using the AI Stack and Email. To get up to speed, we will keep this workshop light with respect to dependencies and third party services. 
 
