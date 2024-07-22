@@ -49,7 +49,7 @@ Use this starter code and follow along with the slides to complete the workshop!
 
 If you need help, reach out to us during the workshop or drop a message on our forums:
 
-- [ ] Insert Nylas Forums link
+https://forums.nylas.com/
 
 ## Learn more
 
